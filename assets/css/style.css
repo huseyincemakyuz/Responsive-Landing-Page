@@ -40,9 +40,15 @@ html {
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   overflow: hidden;
+  background-image: url(/assets/img/background.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 h1,
@@ -56,11 +62,18 @@ ul {
 
 ul {
   list-style: none;
+  display: block;
+}
+
+ul li {
+  margin-right: 10px;
+  display: inline;
+  position: relative;
 }
 
 a {
   text-decoration: none;
-  color: #fff;
+  color: #000;
   cursor: pointer;
 }
 
@@ -69,14 +82,46 @@ img {
   height: auto;
 }
 
+header {
+  display: flex;
+  justify-content: space-between;
+}
+
 
 /* Navbar - Menu */
-
+.menu{
+  margin: 5px;
+}
 
 
 /* Content */
+.content {
+  height: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
+.left-side{
+  margin-left: 80px;
+  color:#fff
+}
+
+.right-side{
+  display: flex;
+  align-items: center;
+  margin-right: 80px;
+}
+
+.icon-play {
+  font-size: 2.5em;
+  border-radius: 50%;
+  background-color: var(--first-color);
+  cursor: pointer;
+  margin-left: 12px;
   
+}
+
 
 /* Social Media */
 
@@ -89,6 +134,10 @@ img {
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
+.social-media > a > i {
+  font-size: 26px;
+  margin: 5px;
+} 
   
 /* Responsive */
 @media screen and (min-width: 768px) {
