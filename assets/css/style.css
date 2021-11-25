@@ -45,7 +45,7 @@ body {
   font-family: var(--body-font);
   font-size: var(--normal-font-size);
   overflow: hidden;
-  background-image: url(/assets/img/background.jpg);
+  background-image: url(../img/background.jpg);
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -62,8 +62,12 @@ ul {
 h2 {
   margin-left: 33px;
   margin-top: 10px;
-  
 }
+
+h2 > span {
+  color:white;
+}
+
 
 ul {
   list-style: none;
@@ -94,6 +98,7 @@ header {
   display: flex;
   justify-content: space-between;
 }
+
 
 
 /* Navbar - Menu */
@@ -129,9 +134,8 @@ header {
   background-color: var(--first-color);
   cursor: pointer;
   margin-left: 12px;
-  
+  color: rgba(248, 247, 248, 0.966);
 }
-
 
 /* Social Media */
 
@@ -149,6 +153,7 @@ header {
 .social-media > a > i {
   font-size: 26px;
   margin: 5px;
+  color:rgba(234, 221, 238, 0.966);
 } 
   
 /* Responsive */
